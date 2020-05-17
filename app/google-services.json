@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "216723690025",
+    "firebase_url": "https://mvp-example-cc67e.firebaseio.com",
+    "project_id": "mvp-example-cc67e",
+    "storage_bucket": "mvp-example-cc67e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216723690025:android:9c866b846a6a4052a90238",
+        "android_client_info": {
+          "package_name": "com.itis.group11801.fedotova.mvpexample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216723690025-917fm2dt9il2h84or8d8iit77s2jf0ji.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBGlIm-ztz2hNzv5K8bv6PCeDqXrIb4mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216723690025-917fm2dt9il2h84or8d8iit77s2jf0ji.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

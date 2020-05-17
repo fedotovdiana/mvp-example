@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/nav_start">
+
+    <fragment
+        android:id="@+id/nav_sign_up"
+        android:name="com.itis.group11801.fedotova.mvpexample.SignUpFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_sign_up" />
+
+    <fragment
+        android:id="@+id/nav_start"
+        android:name="com.itis.group11801.fedotova.mvpexample.StartFragment"
+        android:label="Hello"
+        tools:layout="@layout/fragment_start"
+        />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.itis.group11801.fedotova.mvpexample.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_email_sign_in"
+        android:name="com.itis.group11801.fedotova.mvpexample.EmailSignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_email_sign_in" />
+
+    <fragment
+        android:id="@+id/nav_phone_sign_in"
+        android:name="com.itis.group11801.fedotova.mvpexample.PhoneSignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_phone_sign_in" />
+
+    <fragment
+        android:id="@+id/nav_google_sign_in"
+        android:name="com.itis.group11801.fedotova.mvpexample.GoogleSignInFragment"
+        android:label="Sign In"
+        tools:layout="@layout/fragment_google_sign_in" />
+</navigation>

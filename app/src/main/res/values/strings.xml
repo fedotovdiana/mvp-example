@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">mvp example</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sign_up">Sign up</string>
+    <string name="go_to_sign_up">Go to Sign up</string>
+    <string name="sign_in">Sign In</string>
+    <string name="forget_password">Forget password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="error_email">Incorrect email</string>
+    <string name="error_password">Incorrect password</string>
+    <string name="error_password_length">Too short password</string>
+    <string name="auth_failed">Authentication failed</string>
+    <string name="enter_by_phone">Sign in by phone</string>
+    <string name="enter_by_email">Sign in by email</string>
+    <string name="send_code">Send code</string>
+    <string name="phone_number">Phone number</string>
+    <string name="enter_code">Enter code</string>
+
+</resources>
+
