@@ -45,6 +45,14 @@
             android:gravity="center"
             android:text="To profile" />
 
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-2470617516170934~9396612016" />
+
     </LinearLayout>
 
 </FrameLayout>
