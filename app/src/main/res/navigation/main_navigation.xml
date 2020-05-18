@@ -7,32 +7,32 @@
 
     <fragment
         android:id="@+id/nav_sign_up"
-        android:name="com.itis.group11801.fedotova.mvpexample.SignUpFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.signup.SignUpFragment"
         android:label="Sign Up"
         tools:layout="@layout/fragment_sign_up" />
 
     <fragment
         android:id="@+id/nav_start"
-        android:name="com.itis.group11801.fedotova.mvpexample.StartFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_google_start.StartFragment"
         android:label="Hello"
         tools:layout="@layout/fragment_start"
         />
 
     <fragment
-        android:id="@+id/nav_profile"
-        android:name="com.itis.group11801.fedotova.mvpexample.ProfileFragment"
-        android:label="Profile"
-        tools:layout="@layout/fragment_profile" />
+        android:id="@+id/nav_info"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.info.InfoFragment"
+        android:label="Info"
+        tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@+id/nav_email_sign_in"
-        android:name="com.itis.group11801.fedotova.mvpexample.EmailSignInFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_email.EmailSignInFragment"
         android:label="Sign In"
         tools:layout="@layout/fragment_email_sign_in" />
 
     <fragment
         android:id="@+id/nav_phone_sign_in"
-        android:name="com.itis.group11801.fedotova.mvpexample.PhoneSignInFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_phone.PhoneSignInFragment"
         android:label="Sign In"
         tools:layout="@layout/fragment_phone_sign_in" />
 

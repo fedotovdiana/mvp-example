@@ -1,9 +1,11 @@
-package com.itis.group11801.fedotova.mvpexample
+package com.itis.group11801.fedotova.mvpexample.ui.info
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.itis.group11801.fedotova.mvpexample.R
+import com.itis.group11801.fedotova.mvpexample.data.model.Info
 import kotlinx.android.synthetic.main.item_info.view.*
 
 class InfoAdapter(

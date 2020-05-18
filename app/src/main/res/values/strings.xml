@@ -20,6 +20,8 @@
     <string name="enter_code">Enter code</string>
     <string name="enter_your_info">Enter your info</string>
     <string name="tap_to_crash">TAP TO CRASH</string>
+    <string name="sign_out">SIGN OUT</string>
+    <string name="to_profile">To profile</string>
 
 </resources>
 
