@@ -39,6 +39,7 @@ class StartFragment : Fragment() {
         btn_by_google.setOnClickListener { signIn() }
         btn_by_email.setOnClickListener { findNavController().navigate(R.id.nav_email_sign_in) }
         btn_by_phone.setOnClickListener { findNavController().navigate(R.id.nav_phone_sign_in) }
+        tv_to_profile.setOnClickListener { findNavController().navigate(R.id.nav_profile) }
     }
 
     private fun configureGoogleClient() {

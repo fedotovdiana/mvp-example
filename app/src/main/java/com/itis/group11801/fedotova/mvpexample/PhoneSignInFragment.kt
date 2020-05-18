@@ -98,6 +98,5 @@ class PhoneSignInFragment : Fragment() {
         private const val AUTH_FAILED = "Authentication failed"
         private const val AUTH_SUCCESS = "Authentication success"
         private const val VER_FAILED = "Verification Failed"
-
     }
 }

@@ -37,6 +37,14 @@
             android:background="@color/colorAccent"
             android:text="@string/enter_by_phone"
             android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_to_profile"
+            android:layout_width="160dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="To profile" />
+
     </LinearLayout>
 
 </FrameLayout>

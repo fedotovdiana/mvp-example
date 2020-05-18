@@ -11,7 +11,6 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_email_sign_in.*
 import kotlinx.android.synthetic.main.fragment_email_sign_in.container
-import kotlinx.android.synthetic.main.fragment_sign_up.*
 
 class EmailSignInFragment : Fragment() {
 
@@ -36,15 +35,10 @@ class EmailSignInFragment : Fragment() {
             auth.signInWithEmailAndPassword(et_email.text.toString(), et_password.text.toString())
                 .addOnCompleteListener {
                     if (it.isSuccessful) {
-                        Toast.makeText(activity, "Success", Toast.LENGTH_LONG).show()
+                        Toast.makeText(activity, AUTH_SUCCESS, Toast.LENGTH_LONG).show()
                         findNavController().navigate(R.id.nav_profile)
                     } else {
-                        Snackbar.make(
-                                container,
-                                getString(R.string.auth_failed),
-                                Snackbar.LENGTH_SHORT
-                            )
-                            .show()
+                        Snackbar.make(container, AUTH_FAILED, Snackbar.LENGTH_SHORT).show()
                     }
                 }
         }
