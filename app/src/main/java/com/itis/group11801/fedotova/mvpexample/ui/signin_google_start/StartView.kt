@@ -12,8 +12,6 @@ interface StartView : MvpView {
 
     fun signIn()
 
-    fun configureGoogleClient()
-
     fun navigateToEmail()
 
     fun navigateToPhone()

@@ -11,7 +11,7 @@ interface InfoView : MvpView {
 
     fun updateList(list: MutableList<Info>)
 
-    fun navigateUp()
+    fun navigateToStart()
 
     fun inflateAddDialog()
 }

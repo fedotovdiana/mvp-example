@@ -16,10 +16,7 @@ class SignUpPresenter @Inject constructor(
         if (email.isNotEmpty() && password.isNotEmpty()) {
             presenterScope.launch {
                 if (withContext(Dispatchers.IO) {
-                        repository.signUpEmailAndPassword(
-                            email,
-                            password
-                        )
+                        repository.signUpEmailAndPassword(email, password)
                     }) {
                     viewState.showToast(TOAST_INFO)
                     viewState.navigateToSignIn()

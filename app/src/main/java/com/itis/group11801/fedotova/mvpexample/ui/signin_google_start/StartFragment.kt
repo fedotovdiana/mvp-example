@@ -10,7 +10,6 @@ import androidx.navigation.fragment.findNavController
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.MobileAds
 import com.google.android.gms.auth.api.signin.GoogleSignIn
-import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
 import com.itis.group11801.fedotova.mvpexample.App
@@ -27,12 +26,13 @@ class StartFragment : MvpAppCompatFragment(), StartView {
     lateinit var presenterProvider: Provider<StartPresenter>
     private val presenter by moxyPresenter { presenterProvider.get() }
 
-    private lateinit var googleSignInClient: GoogleSignInClient
+    private lateinit var advRequest: AdRequest
 
     override fun onCreate(savedInstanceState: Bundle?) {
         App.appComponent.injectStartFragment(this)
         super.onCreate(savedInstanceState)
         MobileAds.initialize(activity)
+        advRequest = AdRequest.Builder().build()
     }
 
     override fun onCreateView(
@@ -44,9 +44,8 @@ class StartFragment : MvpAppCompatFragment(), StartView {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        adv.loadAd(AdRequest.Builder().build())
+        adv.loadAd(advRequest)
         initClickListeners()
-        presenter.configureGoogleClient()
     }
 
     private fun initClickListeners() {
@@ -72,16 +71,12 @@ class StartFragment : MvpAppCompatFragment(), StartView {
         Toast.makeText(activity, msg, Toast.LENGTH_LONG).show()
     }
 
-    override fun configureGoogleClient() {
+    override fun signIn() {
         val options = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
-        googleSignInClient = GoogleSignIn.getClient(requireActivity(), options)
-    }
-
-    override fun signIn() {
-        val signInIntent = googleSignInClient.signInIntent
+        val signInIntent = GoogleSignIn.getClient(requireActivity(), options).signInIntent
         startActivityForResult(signInIntent, RC_SIGN_IN)
     }
 

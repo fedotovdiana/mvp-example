@@ -8,7 +8,6 @@ import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.itis.group11801.fedotova.mvpexample.App
 import com.itis.group11801.fedotova.mvpexample.R
-import kotlinx.android.synthetic.main.fragment_email_sign_in.*
 import kotlinx.android.synthetic.main.fragment_phone_sign_in.*
 import moxy.MvpAppCompatFragment
 import moxy.ktx.moxyPresenter
@@ -39,7 +38,7 @@ class PhoneSignInFragment : MvpAppCompatFragment(), PhoneSignInView {
     }
 
     private fun initClickListeners() {
-        btn_sign_in.setOnClickListener { presenter.signIn(et_phone.text.toString()) }
+        btn_send_code.setOnClickListener { presenter.signIn(et_phone.text.toString()) }
         btn_verify.setOnClickListener { presenter.verifyPhoneNumberWithCode(et_code.text.toString()) }
     }
 

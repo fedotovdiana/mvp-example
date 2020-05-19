@@ -21,7 +21,7 @@ class InfoPresenter @Inject constructor(
 
     override fun onFirstViewAttach() {
         super.onFirstViewAttach()
-        user?.let { infoRepository.setListener(eventListener) } ?: viewState.navigateUp()
+        user?.let { infoRepository.setListener(eventListener) } ?: viewState.navigateToStart()
     }
 
     fun insertInfo(info: String) {
@@ -30,7 +30,7 @@ class InfoPresenter @Inject constructor(
 
     fun signOut() {
         userRepository.signOut()
-        viewState.navigateUp()
+        viewState.navigateToStart()
     }
 
     fun crash() {

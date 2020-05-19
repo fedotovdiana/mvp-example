@@ -12,10 +12,6 @@ class EmailSignInPresenter @Inject constructor(
     private val userRepository: UserRepository
 ) : MvpPresenter<EmailSignInView>() {
 
-    fun navigateToSignUp() {
-        viewState.navigateToSignUp()
-    }
-
     fun signIn(email: String, password: String) {
         presenterScope.launch {
             if (withContext(Dispatchers.IO) { userRepository.signInEmail(email, password) }) {
@@ -26,7 +22,6 @@ class EmailSignInPresenter @Inject constructor(
             }
         }
     }
-
 
     fun resetPassword(email: String) {
         if (email.isNotEmpty()) {
@@ -40,6 +35,10 @@ class EmailSignInPresenter @Inject constructor(
         } else {
             viewState.showToast(INCORRECT_EMAIL)
         }
+    }
+
+    fun navigateToSignUp() {
+        viewState.navigateToSignUp()
     }
 
     companion object {

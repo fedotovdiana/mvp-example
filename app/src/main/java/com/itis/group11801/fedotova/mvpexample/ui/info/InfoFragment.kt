@@ -55,8 +55,8 @@ class InfoFragment : MvpAppCompatFragment(), InfoView {
         adapter.update(list)
     }
 
-    override fun navigateUp() {
-        findNavController().navigateUp()
+    override fun navigateToStart() {
+        findNavController().navigate(R.id.nav_start)
     }
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {

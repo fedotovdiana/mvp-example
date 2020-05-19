@@ -10,13 +10,18 @@ import moxy.presenterScope
 import javax.inject.Inject
 
 class StartPresenter @Inject constructor(
-    private var repository: UserRepository
+    private var userRepository: UserRepository
 ) : MvpPresenter<StartView>() {
+
+//    override fun onFirstViewAttach() {
+//        super.onFirstViewAttach()
+//        if (userRepository.getCurrentUser() != null) viewState.navigateToInfo()
+//    }
 
     fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         presenterScope.launch {
-            if (withContext(Dispatchers.IO) { repository.signInWithCredential(credential) }) {
+            if (withContext(Dispatchers.IO) { userRepository.signInWithCredential(credential) }) {
                 viewState.navigateToInfo()
             } else {
                 viewState.showToast(AUTH_FAILED)
@@ -38,10 +43,6 @@ class StartPresenter @Inject constructor(
 
     fun navigateToPhone() {
         viewState.navigateToPhone()
-    }
-
-    fun configureGoogleClient() {
-        viewState.configureGoogleClient()
     }
 
     fun onException() {
