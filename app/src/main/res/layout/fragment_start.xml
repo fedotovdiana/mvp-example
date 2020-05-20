@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ui.signin_google_start.StartFragment">
+    tools:context=".ui.main.start_signin_google.StartFragment">
 
     <com.google.android.gms.common.SignInButton
         android:id="@+id/btn_by_google"

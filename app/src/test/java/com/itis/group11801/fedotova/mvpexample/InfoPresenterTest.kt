@@ -3,9 +3,9 @@ package com.itis.group11801.fedotova.mvpexample
 import com.google.firebase.auth.FirebaseUser
 import com.itis.group11801.fedotova.mvpexample.data.repository.InfoRepository
 import com.itis.group11801.fedotova.mvpexample.data.repository.UserRepository
-import com.itis.group11801.fedotova.mvpexample.ui.info.InfoPresenter
-import com.itis.group11801.fedotova.mvpexample.ui.info.InfoView
-import com.itis.group11801.fedotova.mvpexample.ui.info.`InfoView$$State`
+import com.itis.group11801.fedotova.mvpexample.ui.main.info.InfoPresenter
+import com.itis.group11801.fedotova.mvpexample.ui.main.info.InfoView
+import com.itis.group11801.fedotova.mvpexample.ui.main.info.`InfoView$$State`
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith

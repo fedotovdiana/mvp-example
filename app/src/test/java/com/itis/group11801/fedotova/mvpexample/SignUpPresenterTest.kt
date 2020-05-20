@@ -1,8 +1,8 @@
 package com.itis.group11801.fedotova.mvpexample
 
 import com.itis.group11801.fedotova.mvpexample.data.repository.UserRepository
-import com.itis.group11801.fedotova.mvpexample.ui.signup.SignUpPresenter
-import com.itis.group11801.fedotova.mvpexample.ui.signup.`SignUpView$$State`
+import com.itis.group11801.fedotova.mvpexample.ui.main.signup.SignUpPresenter
+import com.itis.group11801.fedotova.mvpexample.ui.main.signup.`SignUpView$$State`
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.Dispatchers

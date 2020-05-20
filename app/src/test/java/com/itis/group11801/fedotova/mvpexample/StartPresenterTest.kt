@@ -4,8 +4,8 @@ import com.google.firebase.auth.AuthCredential
 import com.google.firebase.auth.GoogleAuthProvider
 import com.google.firebase.auth.GoogleAuthProvider.getCredential
 import com.itis.group11801.fedotova.mvpexample.data.repository.UserRepository
-import com.itis.group11801.fedotova.mvpexample.ui.signin_google_start.StartPresenter
-import com.itis.group11801.fedotova.mvpexample.ui.signin_google_start.`StartView$$State`
+import com.itis.group11801.fedotova.mvpexample.ui.main.start_signin_google.StartPresenter
+import com.itis.group11801.fedotova.mvpexample.ui.main.start_signin_google.`StartView$$State`
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.Dispatchers

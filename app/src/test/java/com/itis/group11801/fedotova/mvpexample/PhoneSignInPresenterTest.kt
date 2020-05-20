@@ -4,8 +4,8 @@ import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 import com.google.firebase.auth.PhoneAuthProvider.getCredential
 import com.itis.group11801.fedotova.mvpexample.data.repository.UserRepository
-import com.itis.group11801.fedotova.mvpexample.ui.signin_phone.PhoneSignInPresenter
-import com.itis.group11801.fedotova.mvpexample.ui.signin_phone.`PhoneSignInView$$State`
+import com.itis.group11801.fedotova.mvpexample.ui.main.signin_phone.PhoneSignInPresenter
+import com.itis.group11801.fedotova.mvpexample.ui.main.signin_phone.`PhoneSignInView$$State`
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.Dispatchers
