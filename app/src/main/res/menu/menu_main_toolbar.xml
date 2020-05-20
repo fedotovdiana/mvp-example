@@ -12,4 +12,10 @@
         android:icon="@drawable/ic_exit_to_app_24dp"
         android:title="@string/sign_out"
         app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/item_game"
+        android:icon="@drawable/ic_extension_24dp"
+        android:title="@string/to_graph"
+        app:showAsAction="collapseActionView|ifRoom" />
 </menu>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/game_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_game"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.game.GameFragment"
+        android:label="@string/title_game"
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_navigation_game_to_navigation_settings"
+            app:destination="@id/navigation_settings" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_score"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.score.ScoreFragment"
+        android:label="@string/title_score"
+        tools:layout="@layout/fragment_score" />
+
+    <fragment
+        android:id="@+id/navigation_settings"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.settings.SettingsFragment"
+        android:label="@string/title_settings"
+        tools:layout="@layout/fragment_settings">
+        <action
+            android:id="@+id/action_navigation_settings_to_navigation_action"
+            app:destination="@id/navigation_action" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_action"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.action.ActionFragment"
+        android:label="@string/title_action"
+        tools:layout="@layout/fragment_action">
+        <argument
+            android:name="name"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

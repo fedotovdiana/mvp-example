@@ -7,38 +7,38 @@
 
     <fragment
         android:id="@+id/nav_sign_up"
-        android:name="com.itis.group11801.fedotova.mvpexample.ui.signup.SignUpFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.main.signup.SignUpFragment"
         android:label="Sign Up"
         tools:layout="@layout/fragment_sign_up" />
 
     <fragment
         android:id="@+id/nav_start"
-        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_google_start.StartFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.main.start_signin_google.StartFragment"
         android:label="Hello"
         tools:layout="@layout/fragment_start"
         />
 
     <fragment
         android:id="@+id/nav_info"
-        android:name="com.itis.group11801.fedotova.mvpexample.ui.info.InfoFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.main.info.InfoFragment"
         android:label="Info"
         tools:layout="@layout/fragment_info" />
 
     <fragment
         android:id="@+id/nav_email_sign_in"
-        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_email.EmailSignInFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.main.signin_email.EmailSignInFragment"
         android:label="Sign In"
         tools:layout="@layout/fragment_email_sign_in" />
 
     <fragment
         android:id="@+id/nav_phone_sign_in"
-        android:name="com.itis.group11801.fedotova.mvpexample.ui.signin_phone.PhoneSignInFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.main.signin_phone.PhoneSignInFragment"
         android:label="Sign In"
         tools:layout="@layout/fragment_phone_sign_in" />
 
     <fragment
         android:id="@+id/nav_google_sign_in"
-        android:name="com.itis.group11801.fedotova.mvpexample.GoogleSignInFragment"
+        android:name="com.itis.group11801.fedotova.mvpexample.ui.game.settings.SettingsFragment"
         android:label="Sign In"
-        tools:layout="@layout/fragment_google_sign_in" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>

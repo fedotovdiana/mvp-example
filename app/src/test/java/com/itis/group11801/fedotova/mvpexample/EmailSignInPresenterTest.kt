@@ -1,8 +1,8 @@
 package com.itis.group11801.fedotova.mvpexample
 
 import com.itis.group11801.fedotova.mvpexample.data.repository.UserRepository
-import com.itis.group11801.fedotova.mvpexample.ui.signin_email.EmailSignInPresenter
-import com.itis.group11801.fedotova.mvpexample.ui.signin_email.`EmailSignInView$$State`
+import com.itis.group11801.fedotova.mvpexample.ui.main.signin_email.EmailSignInPresenter
+import com.itis.group11801.fedotova.mvpexample.ui.main.signin_email.`EmailSignInView$$State`
 import io.mockk.*
 import io.mockk.impl.annotations.MockK
 import kotlinx.coroutines.Dispatchers

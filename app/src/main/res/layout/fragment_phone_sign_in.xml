@@ -6,7 +6,7 @@
     android:fitsSystemWindows="true"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".ui.signin_phone.PhoneSignInFragment">
+    tools:context=".ui.main.signin_phone.PhoneSignInFragment">
 
     <EditText
         android:id="@+id/et_phone"
